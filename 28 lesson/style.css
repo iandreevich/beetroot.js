@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#playlist {
+  font-size: 20px;
+}
+
+#trafficLight {
+  background: black;
+  width: 120px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px solid lightgray;
+}
+
+.lights {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: gray;
+  margin: auto;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.green {
+  background-color: #00ff00;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.stake {
+  width: 20px;
+  height: 320px;
+  background-color: rgb(26, 25, 25);
+  padding: 0;
+}
+
+#trafficLightSwitch {
+  background-color: orange;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  width: 60px;
+  height: 60px;
+  font-size: large;
+}
