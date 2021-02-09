@@ -1,0 +1,51 @@
+#myDiv {
+  display: block;
+  font-size: 40px;
+  color: green;
+}
+
+#myTextarea {
+  display: none;
+}
+.content__textarea {
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  border: 3px solid #000000;
+}
+.content__textarea--resizer {
+  display: block;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: orange;
+
+  cursor: col-resize;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 300px;
+  left: 0;
+  top: 0;
+  background: #c94f39;
+  color: #fff;
+  padding: 0.5em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  opacity: 0;
+  transition: 1s;
+  font-size: 35px;
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+  top: 2em;
+}
