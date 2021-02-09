@@ -1,0 +1,133 @@
+body {
+  background-image: url(/Task1/img/45d246d3-a95a-4eca-9664-d0e91fd589fa.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  width: 30%;
+  margin: auto;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+
+.tabs__caption {
+  margin: auto;
+  display: flex;
+  background-color: #2b3040;
+  padding: 1.5rem;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.tabs__tab {
+  margin: auto;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+.tabs__tab:hover {
+  color: #13e28d;
+  cursor: pointer;
+}
+.content__product {
+  display: flex;
+  background: #212534;
+  justify-content: space-around;
+}
+.info__product {
+  width: 55%;
+}
+.content__information,
+.content__review,
+.content__buy {
+  background: #212534;
+  display: flex;
+  flex-direction: column;
+}
+.content__information {
+  padding: 3rem 2rem;
+}
+.content__review {
+  padding: 2rem;
+}
+.content__buy {
+  padding: 1rem 2rem;
+}
+
+.tabs__content.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.5s;
+  pointer-events: auto;
+}
+
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s linear 0.5s, opacity 0.5s linear;
+}
+.checked {
+  color: yellow;
+}
+
+.product__tittle {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.product__subtittle {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.buy__rating {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.product__buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 1rem;
+}
+.buy__price {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.buy__price::before {
+  content: "20% OFF";
+  font-size: 12px;
+  position: absolute;
+  top: 1px;
+  color: yellow;
+}
+.buy__button {
+  padding: 1rem 2rem;
+  border: 0;
+  text-transform: uppercase;
+  background-color: #13e28d;
+  color: #fff;
+  font-size: 14px;
+}
+.product__description {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.youtube {
+  width: 100%;
+  height: 20rem;
+}
+
+.review__tittle {
+  text-align: center;
+}

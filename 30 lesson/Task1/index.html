@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tabs">
+        <div class="tabs__menu">
+          <ul class="tabs__caption">
+            <li class="tabs__tab">
+              <i class="fas fa-align-justify"></i> <br />
+              <p>Information</p>
+            </li>
+            <li class="tabs__tab">
+              <i class="far fa-star"></i>
+              <p>Review</p>
+            </li>
+            <li class="tabs__tab">
+              <i class="fas fa-cogs"></i>
+              <p>REQUIREMENTS</p>
+            </li>
+          </ul>
+        </div>
+        <div class="tabs__content active">
+          <div class="content__information">
+            <div class="content__product">
+              <div content__image>
+                <img
+                  class="box__img"
+                  src="img/Layer 33 copy.jpg"
+                  alt="FarCry 4"
+                  width="163 px"
+                />
+              </div>
+              <div class="info__product" id="#tab2">
+                <p class="product__tittle">FarCry 4</p>
+                <p class="product__subtittle">First Released Nov 17, 2014</p>
+                <p class="product__description">
+                  In Far Cry 4, players find themselves in Kyrat, a
+                  breathtaking, perilous and wild region of the Hima layas
+                  struggling under the regime of a despotic self-appointed king.
+                </p>
+              </div>
+            </div>
+            <div class="product__buy">
+              <div class="buy__rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p class="buy__price">$59.96</p>
+              <button
+                onclick="document.location='https://store.steampowered.com/app/298110/Far_Cry_4/'"
+                class="buy__button"
+              >
+                Buy it now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tabs__content">
+          <div class="content__review">
+            <h2 class="review__tittle">Review FarCry 4</h2>
+            <iframe
+              src="https://www.youtube.com/embed/JBtXR9PE3q0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="youtube"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="tabs__content">
+          <div class="content__buy">
+            <ul>
+              <strong>Рекомендованные:</strong
+              ><br />
+              <ul class="bb_ul">
+                <li>
+                  <strong>ОС:</strong> Windows® 7 (SP1) / Windows® 8 / Windows®
+                  8.1 / (64-bit only)<br />
+                </li>
+                <li>
+                  <strong>Процессор:</strong> 2.5 GHz Intel® Core™ i5-2400S or
+                  4.0 GHz AMD FX-8350 or better<br />
+                </li>
+                <li><strong>Оперативная память:</strong> 8 GB ОЗУ<br /></li>
+                <li>
+                  <strong>Видеокарта:</strong> NVIDIA GeForce GTX 680 or AMD
+                  Radeon R9 290X or better (2 GB VRAM)<br />
+                </li>
+                <li><strong>DirectX:</strong> Версии 11<br /></li>
+                <li>
+                  <strong>Сеть:</strong> Широкополосное подключение к
+                  интернету<br />
+                </li>
+                <li><strong>Место на диске:</strong> 30 GB<br /></li>
+                <li>
+                  <strong>Звуковая карта:</strong> DirectX-compatible (5.1
+                  surround sound recommended)<br />
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

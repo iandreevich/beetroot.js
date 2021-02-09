@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-family: "Jomhuria", cursive;
+  background-color: rgb(20, 20, 20);
+}
+.calc {
+  width: 325px;
+  margin: auto;
+
+  padding: 50px;
+  border-radius: 20px;
+}
+.calc-display {
+  width: 95%;
+  height: 75px;
+  border: none;
+  background-color: rgb(6, 223, 223);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 70px;
+  padding-left: 15px;
+}
+input[type="button"] {
+  width: 75px;
+  height: 75px;
+  margin: 2px;
+  color: #ffffff;
+  background-color: dimgray;
+}
