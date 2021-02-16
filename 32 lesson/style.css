@@ -1,0 +1,49 @@
+body {
+  background: url(https://i.pinimg.com/originals/51/c2/2e/51c22e9f59f506d283c1b07fa92e9a93.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Newsreader", serif;
+}
+#myInput,
+#type,
+#btn {
+  padding: 1rem;
+  font-size: large;
+}
+
+#btn {
+  padding: 1.1rem 3rem;
+  text-transform: uppercase;
+  background-color: #ffb900;
+  border: none;
+  outline: none;
+}
+#myUL {
+  width: 40%;
+  height: 40vh;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.5rem;
+}
+.item {
+  list-style: none;
+}
+.film__item {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+#details {
+  padding: 1rem;
+  color: #ffb900;
+}
