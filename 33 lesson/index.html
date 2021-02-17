@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Let's start a trip</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="map"></div>
+    <div class="destination">
+      <div class="destination__places">
+        <div class="places__start-way">
+          <label for="start">Введите начальную точку маршрута</label>
+          <input id="start" value="Черновцы" type="text" />
+        </div>
+        <div class="places__start-end">
+          <label for="end">Введите конечную точку маршрута</label>
+          <input id="end" value="Львов" type="text" />
+        </div>
+      </div>
+      <button type="button" id="btn">Поехали!</button>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3wn72BTYrQaZqRobChO4SYOoctZ1Yzxo&callback=initMap&libraries=&v=weekly"
+      async
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  background: rgba(48, 48, 48, 1);
+}
+
+.destination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+
+  margin: auto;
+  color: #ffffff;
+  font-size: 20px;
+}
+.destination__places {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.places__start-way {
+  margin-right: 25px;
+}
+#map {
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+#btn {
+  background-color: #2df505;
+  border: 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
