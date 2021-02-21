@@ -1,0 +1,125 @@
+.header {
+    color: #ffffff;
+    margin: 0 auto;
+    position: relative;
+}
+.navigation {
+    text-decoration: none;
+    color: #ffffff;
+    max-width: 1200px;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: $fontBook;
+    text-transform: uppercase;
+    font-size: 14px;
+    z-index: 2;
+    &__menu {
+        list-style: none;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    &__item a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    &__item a:hover {
+        opacity: 0.8;
+    }
+
+    &__socials {
+        display: flex;
+
+        justify-content: space-between;
+    }
+    &__social {
+        margin-left: 1rem;
+        padding: 0.5rem;
+        text-align: center;
+        width: 1rem;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+    }
+    &__socials a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    &__socials a:hover {
+        opacity: 0.7;
+    }
+}
+.slider {
+    &__slide {
+        font-family: $fontBook;
+        height: 800px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background: url(/dist/img/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .second {
+        background: url(/dist/img/slide2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        font-size: 80px;
+        width: 80%;
+    }
+    &__subtitle {
+        font-size: 18px;
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .slick-list {
+        overflow: hidden;
+    }
+    .slick-track {
+        display: flex;
+    }
+    .slick-dots {
+        position: absolute;
+        bottom: 40%;
+        right: 1%;
+        list-style: none;
+    }
+
+    .slick-dots button {
+        font-size: 0;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        border: 1px solid #ffffff;
+        margin-bottom: 1.5rem;
+        background: none;
+    }
+
+    .slick-dots .slick-active button {
+        background-color: #ffffff;
+    }
+}
+
+.header__scroll-down {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    bottom: 5%;
+    left: 50%;
+}
