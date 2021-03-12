@@ -1,0 +1,61 @@
+.color-generator {
+  display: flex;
+  flex-direction: column;
+  font-family: "Recursive", sans-serif;
+}
+.color-generator__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  margin: auto;
+  padding: 1rem;
+}
+.color-generator__title {
+  font-size: 20px;
+  color: #555;
+  letter-spacing: 0;
+}
+.color-generator__colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px dashed #555;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.color-generator__colors:hover {
+  background: #555;
+}
+.color-generator__colors:hover .color-generator__title {
+  color: white;
+}
+.color-generator__colors {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.color-generator__input {
+  padding: 1rem 0.5rem;
+  text-align: center;
+  width: 60%;
+  font-size: 20px;
+}
+
+.color-generator__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #555;
+  color: #fff;
+}
+.color-generator__button:hover {
+  background-color: tomato;
+  cursor: pointer;
+}
+.color-generator__result {
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

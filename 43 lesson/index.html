@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="myApp">
+      <div class="color-generator">
+        <div class="color-generator__form">
+          <input
+            class="color-generator__input"
+            v-model="colorText"
+            type="text"
+            placeholder="Enter color..."
+          />
+          <button class="color-generator__button" @click="getTextColor">
+            GO
+          </button>
+        </div>
+        <div class="color-generator__colors">
+          <h2 class="color-generator__title">Available colors:</h2>
+          <p
+            class="color-generator__color"
+            v-for="(color, i) in colors "
+            :key="i"
+            style="color: color"
+            v-bind:style="{ color: color}"
+          >
+            {{color}}
+          </p>
+        </div>
+        <p
+          class="color-generator__result"
+          v-if="awesome"
+          v-bind:style="{ color: result}"
+        >
+          {{result}}
+        </p>
+        <p class="color-generator__result" v-if="error">
+          Enter the corect color
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
