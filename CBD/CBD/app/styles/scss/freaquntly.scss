@@ -1,0 +1,82 @@
+.fraq {
+  background-color: #f7f8f3;
+  font-family: $font;
+  padding-bottom: 150px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    padding: 150px 0 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  &__accordion {
+    cursor: pointer;
+    padding: 16px;
+    width: 40%;
+    border: none;
+    border-top: 1px solid #eaedde;
+    outline: none;
+    transition: 0.5s;
+    background: none;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 4px;
+    font-family: $font;
+    color: #6e774a;
+  }
+  &__accordion:hover {
+    background-color: #6e774a;
+    color: #fff;
+  }
+  &__accordion:hover:before {
+    color: #fff;
+  }
+  &__accordion:before {
+    content: "\002B";
+    color: #6e774a;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    margin-right: 12px;
+  }
+
+  &__active::before {
+    content: "\2212";
+  }
+  &__text {
+    padding: 2rem 0rem;
+    width: 75%;
+    line-height: 35px;
+  }
+  &__panel {
+    font-size: 18px;
+    padding: 0 18px;
+    width: 35%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .fraq {
+    &__accordion {
+      width: 55%;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__panel {
+      font-size: 15px;
+      width: 50%;
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+}

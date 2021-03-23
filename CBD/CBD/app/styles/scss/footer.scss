@@ -1,0 +1,106 @@
+.footer {
+  background-color: #f7f8f3;
+  font-family: $font;
+  color: #6e774a;
+  text-align: center;
+  min-height: 440px;
+
+  &__boxes {
+    padding: 50px 0px;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+  }
+  &__box {
+    line-height: 35px;
+  }
+
+  &__logo {
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  &__line {
+    height: 2px;
+    background-color: #6e774a;
+    width: 350px;
+    margin-bottom: 70px;
+  }
+  &__list {
+    margin: 50px;
+  }
+  &__line-vertical {
+    width: 2px;
+    background-color: #6e774a;
+    height: 55px;
+    margin: 20px auto;
+  }
+
+  &__socials {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: #6e774a;
+    }
+    a :hover {
+      color: black;
+    }
+  }
+
+  &__subscribe {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__form {
+    margin-top: 15px;
+  }
+  &__input {
+    border: 2px solid #ced6af;
+    padding: 1rem 3rem;
+    background: none;
+    font-family: $font;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  &__btn {
+    border: 2px solid #ced6af;
+    border-left: 0;
+    padding: 1rem 2rem;
+    margin-left: -6px;
+    background: none;
+    font-family: $font;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .footer {
+    &__line {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .footer {
+    &__boxes {
+      display: flex;
+      flex-direction: column;
+    }
+    &__btn,
+    &__input {
+      font-size: 10px;
+    }
+  }
+}

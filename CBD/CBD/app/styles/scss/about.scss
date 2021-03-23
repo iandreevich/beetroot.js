@@ -1,0 +1,135 @@
+.tabs-nav {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  border-bottom: 1px solid #ced6af;
+  justify-content: space-between;
+  font-size: $fontSizeTitle;
+  font-family: $font;
+  letter-spacing: 5px;
+  font-weight: bold;
+  &__item:hover {
+    color: #6e774a;
+  }
+}
+
+.tab {
+  padding: 100px;
+
+  display: none;
+  &__content {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    font-family: $font;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    p {
+      color: #6e774a;
+      font-size: 18px;
+      line-height: 2.2rem;
+    }
+
+    h2 {
+      letter-spacing: 5px;
+      font-size: $fontSizeTitle;
+      color: #212120;
+    }
+  }
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+  }
+  &__images img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+}
+.is-active {
+  display: block;
+}
+.is-active-tab {
+  border-bottom: 1px solid #1c1c1b;
+}
+
+.about {
+  background-color: #f7f8f3;
+  &__image {
+    width: 30%;
+    padding: 100px 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 1290px) {
+  .tabs__nav {
+    font-size: 20px;
+  }
+
+  .tab {
+    &__content {
+      width: 80%;
+    }
+    p {
+      font-size: 13px;
+    }
+
+    h2 {
+      letter-spacing: 5px;
+      font-size: 20px;
+      color: #212120;
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .tab {
+    padding: 50px;
+    &__description {
+      padding: 1.5rem 0px;
+      width: 80%;
+      margin: auto;
+    }
+    &__content {
+      width: 80%;
+      flex-direction: column;
+    }
+    &__images {
+      display: flex;
+
+      justify-content: space-around;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .tabs__nav {
+    font-size: 15px;
+  }
+  .about {
+    &__image {
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .tabs-nav {
+    flex-direction: column;
+    width: 30%;
+    border: 0;
+    &__item {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body a,
+button {
+  cursor: pointer;
+}
+
+@import "var";
+@import "header";
+@import "modal";
+@import "intro";
+@import "about";
+@import "products";
+@import "freaquntly";
+@import "reviews";
+@import "footer";
